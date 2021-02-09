@@ -3,36 +3,30 @@
 
 int main()
 {
+    // 1-dars: o'zgaruvchilarni e'lon qilish
+
+
 
     char name[] = "Bahromjon";
-    double d = 4.4;
+    printf("%s\n", name);
 
-    printf("%s %f", name, d);
+    int age = 26;
+    printf("%d\n", age);
+
+    float weight = 55.4;
+    printf("%f\n", weight);
+
+    double height = 168.5;
+    printf("%lf\n", height);
+
+    short gpa = 5;
+
+
+
+
 
     return 0;
 
 }
 
-void triangle(){
 
-
-    for(int i = 1; i < 6; i++) {
-        for(int j = 6; j > i; j--){
-            printf("*");
-        }
-
-        printf("\n");
-        }
-
-
-        for(int i = 1; i < 6; i++){
-            for(int j = 0; j<i; j++){
-                printf("*");
-            }
-            printf("\n");
-
-    }
-
-
-
-}

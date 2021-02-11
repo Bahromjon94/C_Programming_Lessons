@@ -74,6 +74,8 @@ int main()
     fgets(buf, 20, stdin);
     printf("string is: %s\n", buf);
 
+    // scanf(); va fgets(); funksiyalarini bir vaqtning o'zida ishlatib bo'lmaydi.
+
     return 0;
 
 }

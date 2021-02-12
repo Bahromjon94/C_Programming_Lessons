@@ -8,7 +8,7 @@ int main() {
 //    workOne();
 //    workTwo();
 //    workThree();
-//    workFour();
+    workFour();
 
     return 0;
 }
@@ -102,14 +102,9 @@ void workFour() {
     if(year == 1700 || year == 1800 || year == 1900 || year == 2100) {
         printf("This isn't a leap year\n");
 
-    } else if(year == 4) {
-        printf("Leap year\n");
+    } else if(year >= 4) {
 
-    } else if(year > 4) {
-
-        int result = year - 4;
-
-        if(result % 4 == 0) {
+        if(year % 4 == 0) {
             printf("This is a leap year\n");
 
         } else {

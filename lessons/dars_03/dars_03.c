@@ -50,7 +50,6 @@ int main() {
 
     */
 
-    test();
 
     return 0;
 
@@ -140,14 +139,6 @@ void gpaF() {
     }
 
     gpaF();
-
-}
-
-void test() {
-
-    for(short i = 1; i > 0; i++) {
-        printf("%d ", i);
-    }
 
 }
 

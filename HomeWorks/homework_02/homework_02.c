@@ -24,8 +24,8 @@ void salaryF() {
 
     if(stage >= 5) {
 
-            double percent = salary * 0.05;
-            double general = salary + percent;
+            double percent = (double) salary * 0.05;
+            double general = (double) salary + percent;
 
             printf("Oyligingizga 5 foiz qo'shildi, sizga %lf beriladi \n", general);
 
@@ -90,13 +90,13 @@ void seller() {
     printf("Mahsulot soni: ");
     scanf("%lf", &quantity);
 
-    double genPrice = price * quantity;
+    double genPrice = (double) price * quantity;
 
     if(quantity > 0) {
 
         if(quantity >= 1000) {
 
-            double discount = genPrice * 0.1;
+            double discount = (double) genPrice * 0.1;
             printf("Sizga o'n foiz chegirma qilib beeramiz. Narxi: %lf bo'ladi. \n", genPrice - discount);
 
 

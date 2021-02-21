@@ -5,7 +5,8 @@ int main() {
 
 //    romb();
 //    fullRomb();
-//    whileLoop();
+    whileLoop();
+//    loopTest();
 
     return 0;
 }
@@ -13,11 +14,15 @@ int main() {
 
 void whileLoop() {
 
-    int i = 0;
+    int i = 1;
+    int j = 0;
 
     while(i < 10) {
-
-        printf("Hello! \n");
+        while(j < i) {
+            printf("%d", i);
+            j++;
+        }
+        printf("\n");
         i++;
     }
 
@@ -92,11 +97,11 @@ void fullRomb() {
 
             printf("*");
         }
+
         for(int j = 7; j > i; j--) {
 
             printf("*");
         }
-
 
         printf("\n");
     }
@@ -104,4 +109,48 @@ void fullRomb() {
 
     // jami sakkizta for ishlatildi.
 
+
+}
+
+
+int loopTest() {
+
+
+    for(int i = 1; i < 10; i++) {
+        for(int j = 10; j > i; j--) {
+                printf("*");
+        }
+
+        for(int k = 1; k < i; k++) {
+            printf("  ");
+        }
+
+        for(int j = 10; j > i; j--) {
+                printf("*");
+        }
+
+        printf("\n");
+    }
+
+
+    for(int i = 1; i < 10; i++) {
+        for(int j = 0; j < i; j++) {
+                printf("*");
+        }
+
+        for(int k = 9; k > i; k--) {
+            printf("  ");
+        }
+
+        for(int j = 0; j < i; j++) {
+                printf("*");
+        }
+
+        printf("\n");
+    }
+
+    printf("// Jami 8 ta for loop ishlatildi.");
+
+
+    return 0;
 }

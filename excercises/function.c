@@ -3,14 +3,26 @@
 
 int main() {
 
+    int a = 12;
+    int b = 15;
+    int c = a;
+    a = b;
+    b = c;
 
-    println("Hello World!");
+    printf("a = %d", a);
+    println("");
+    printf("b = %d", b);
 
 }
 
-int println(char str[100]) {
+int println(char str[]) {
 
     printf("%s\n", str);
 
     return 0;
 }
+
+
+
+
+

@@ -8,7 +8,7 @@ int main() {
 
 //    hundredPrime();
 
-    reverseNum();
+//    reverseNum();
 
     return 0;
 }
@@ -38,6 +38,8 @@ int primeNumber() {
         println("This isn't a prime number");
 
     }
+
+    primeNumber();
 
     return 0;
 }
@@ -84,25 +86,26 @@ int hundredPrime() {
     int num = 2;
 
 
-    for(int i = 1; i <= 100; i++) {
-
-        for(int j = 2; j <= num / 2; j++) {
-
+    for(int i = 2; i <= 541; i++) {
+        for(int j = 2; j < i; j++) {
             isPrime = 0;
-            if(num % j == 0) {
+
+            if(i % j == 0) {
                 isPrime++;
                 break;
             }
-
         }
 
-        if(isPrime == 0 && num != 1) {
-            printf("%d, ", num);
-
+        if(isPrime == 0) {
+            counter++;
+            sum += i;
+            printf("%d. %d \n",counter, i);
         }
-        num++;
-
     }
+
+    printf("Birinchi 100 ta tub sonlarning yig'indisi: %d", sum);
+
+
 
     return 0;
 

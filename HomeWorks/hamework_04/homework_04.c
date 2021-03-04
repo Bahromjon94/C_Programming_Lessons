@@ -32,18 +32,22 @@ int copyArr() {
 
 int duplicateTwoArray() {
 
-    int nums1[] = {45, 79, 5, 52, 6, 52, 79};
-    int nums2[] = {54, 45, 79, 18, 48, 4};
+    int nums1[] = {47, 79, 5, 52, 6, 52, 79};
+    int nums2[] = {5, 45, 79, 52, 48, 4, 6};
 
-    size_t size = sizeof(nums1) / sizeof(int);
+    size_t size = sizeof(nums2) / sizeof(int);
+
+    int nums3[3];
 
     bool isDuplicate = false;
 
     for (int i = 0; i < size; i++) {
         for (int j = 0; j < i; j++) {
 
-            if (nums1[i] == nums1[j]) {
+            if (nums1[j] == nums2[j]) {
                 isDuplicate = true;
+                int c = nums2[j];
+                nums3[i] = c;
                 break;
             }
 
@@ -57,6 +61,10 @@ int duplicateTwoArray() {
         printf("not duplicate");
     }
 
+
+    for (int i = 0; i < 3; i++) {
+        printf("%d, ", nums3[i]);
+    }
 
     return 0;
 }

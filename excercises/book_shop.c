@@ -52,11 +52,20 @@ void bookList(int num) {
     switch(num) {
 
         case 1:
-            book(1, "Shayx Muhammad Sodiq Muhammad Yusuf - Baxtiyor oila", 55000);
-            book(2, "Alixon To'ra Sog'uniy - Tarixi Muhammidiy", 192000);
-            book(3, "Odinaxon Muhammad Sodiq - Go'zal o'rnak", 17000);
-            book(4, "Mubashshir Ahmad - Olim, Odam va Olam", 25000);
-            book(5, "Doktor Jihod Turboniy - Islom ummatining 100 buyuk shaxsi", 215000);
+            println("Diniy kitoblar bo'limi");
+            int a = book(1, "Shayx Muhammad Sodiq Muhammad Yusuf - Baxtiyor oila", 55000);
+            int b = book(2, "Alixon To'ra Sog'uniy - Tarixi Muhammidiy", 192000);
+            int c = book(3, "Odinaxon Muhammad Sodiq - Go'zal o'rnak", 17000);
+            int d = book(4, "Mubashshir Ahmad - Olim, Odam va Olam", 25000);
+            int e = book(5, "Doktor Jihod Turboniy - Islom ummatining 100 buyuk shaxsi", 215000);
+            printf("6. << Ortga");
+
+
+            int choosing;
+            scanf("%d", &choosing);
+
+            if
+
             break;
 
         case 2:
@@ -67,9 +76,11 @@ void bookList(int num) {
 
 }
 
-void book(int id, char title[], int price) {
+int book(int id, char title[], int price) {
     int num = 1;
     printf("%d. %s - %d so'm\n", id, title, price);
+
+    return price;
 }
 
 void println(char str[]) {
@@ -87,7 +98,7 @@ void printDash(char str[]) {
         printf("-");
     }
 
-    printf("\n\n %s \n\n", str);
+    printf("\n %s \n", str);
 
     for (int i = 0; i < size + 2; i++) {
         printf("-");

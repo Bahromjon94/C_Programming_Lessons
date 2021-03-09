@@ -1,8 +1,13 @@
 # depslib dependency file v1.0
-1614839833 source:c:\users\acer\codeblocks\lessons\dars_11\dars_11\main.c
+1614957377 source:c:\users\acer\codeblocks\lessons\dars_11\dars_11\main.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	<stdbool.h>
 	<math.h>
+	<human.h>
+
+1615137228 source:c:\users\acer\codeblocks\lessons\dars_11\dars_11\src\human.cpp
+
+1615137217 c:\users\acer\codeblocks\lessons\dars_11\dars_11\include\human.h
 

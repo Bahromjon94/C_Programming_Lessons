@@ -6,16 +6,10 @@
 
 int main(){
 
-    // 11-dars. Fuctions.
+    // 11-dars. Functions.
 
 //    toUpperCase();
-//    sayHi("Bahromjon");
 
-    int a = toBinary(5);
-    printf("%d", a);
-
-    return 0;
-}
 
 int power(int num1, int num2) {
 
@@ -26,7 +20,6 @@ int power(int num1, int num2) {
     }
     return res;
 }
-
 
 void toDecimal(int num) {
 

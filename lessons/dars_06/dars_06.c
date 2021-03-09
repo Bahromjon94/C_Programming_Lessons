@@ -145,7 +145,7 @@ int primeNumber() {
 
 }
 
-int primeNums() {
+void primeNums() {
 
     int num;
     int isPrime;
@@ -176,6 +176,8 @@ int primeNums() {
 
 
 }
+
+
 
 
 

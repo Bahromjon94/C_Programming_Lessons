@@ -6,10 +6,16 @@
 struct Student {
 
     char name[30];
+    char unv[50];
     int age;
     double gpa;
 
+};
 
+struct Human {
+
+    char name[30];
+    int age;
 
 };
 
@@ -18,12 +24,12 @@ int main() {
 
     // Structures.
     // Structure nima?
-    //
-    setStruct();
 
+    setStruct();
 
     return 0;
 }
+
 
 void setStruct() {
 
@@ -33,26 +39,28 @@ void setStruct() {
     stud.age;
     stud.gpa;
 
-    printf("Enter a name: \n");
+    println("Enter your name:");
     scanf("%s", &stud.name);
 
-    printf("Enter your age: \n", stud.age);
+    println("Enter your age:");
     scanf("%d", &stud.age);
 
-    printf("Enter your GPA: \n");
+    println("Enter your University:");
+    scanf("%s", &stud.unv);
+
+    println("Enter your GPA:");
     scanf("%lf", &stud.gpa);
 
-    getStruct(stud.name, stud.age, stud.gpa);
+    getStruct(stud.name, stud.age, stud.unv, stud.gpa);
 }
 
-
-void getStruct(char name[], int age, double gpa) {
-    printf("Name is: %s\n", name);
-    printf("Age is: %d\n", age);
-    printf("GPA is: %.02lf", gpa);
+void getStruct(char name[], int age, char unv[], double gpa) {
+    printf("Name is: %s \n", name);
+    printf("Age is: %d \n", age);
+    printf("University is: %s \n", unv);
+    printf("GPA is: %.02lf \n", gpa);
 
 }
-
 
 int strLen(char *text) {
 
@@ -62,6 +70,10 @@ int strLen(char *text) {
         len++;
     }
     return len;
+}
+
+void println(char str[]) {
+    printf("%s\n", str);
 }
 
 

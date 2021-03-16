@@ -33,8 +33,6 @@ struct Lesson android;
 struct Lesson frontEnd;
 struct Student students[20];
 
-
-
 int main() {
 
     strcpy(azamat.name, "Azamat");
@@ -76,8 +74,6 @@ void studentList() {
     struct Student student12 = { .name = "Student 12", .age = 26, .unvr = "Najot Ta'lim" };
     struct Student student13 = { .name = "Student 13", .age = 26, .unvr = "Najot Ta'lim" };
     struct Student student14 = { .name = "Student 14", .age = 26, .unvr = "Najot Ta'lim" };
-
-    android.] = student0;
 
 
     students [0] = student0;
